@@ -1,0 +1,23 @@
+GET http://localhost:9090/categories
+
+###
+POST  http://localhost:9090/categories
+Content-Type: application/json
+
+{
+     "name":"phone",
+     "image": "asdfdsd",
+     "catId": 2
+}
+
+###
+PUT http://localhost:9090/categories/4
+Content-Type: application/json
+
+{
+     "name": 
+}
+
+
+###
+DELETE http://localhost:9090/categories/1

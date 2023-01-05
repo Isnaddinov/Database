@@ -1,0 +1,31 @@
+GET http://localhost:9090/books
+
+###
+GET http://localhost:9090/books?bycount=345
+
+###
+GET http://localhost:9090/boks?byname=History
+
+###
+POST http://localhost:9090/books
+Content-Type: application/json
+
+{   
+    "name": "History",
+    "author": "Oklasdsdnikov",
+    "price": 200,
+    "count": 345
+}
+
+###
+PUT http://localhost:9090/books/3
+Content-Type: application/json
+
+{
+    "name": "noov",
+    "author": "string",
+    "price": 4,
+    "count":1
+}
+###
+DELETE http://localhost:9090/books/2
